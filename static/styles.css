@@ -1,0 +1,29 @@
+h1 {
+    text-decoration: underline;
+    color: saddlebrown;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    width: auto;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: deepskyblue;
+}
+
+header > * {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+body {
+    background-color: sandybrown;
+}

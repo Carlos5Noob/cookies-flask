@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Página principal</title>
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
 
-    <h1>Página principal</h1>
+    <header>
+        <a href="/"><h2>HOME</h2></a>
+        <a href="https://www.interior.gob.es/opencms/es/politica-de-cookies/"><h2>PRIVACY POLICY</h2></a>
+    </header>
 
-    <p>Utilizamos cookies y de terceros para obtener datos estadísticosde de la navegación de nuestros usuarios y mejorar nuestros servicios.</p>
+    <section>
+        <h1>Página principal</h1>
 
-    <a href="{{url_for('set_cookies')}}"><button type="button">Aceptar</button></a>
-    <a href="{{ url_for('denegar_cookies') }}"><button type="button">Denegar</button></a>
+        <p>Utilizamos cookies y de terceros para obtener datos estadísticosde de la navegación de nuestros usuarios y mejorar nuestros servicios.</p>
 
-    <p>Haz click<a href="https://www.interior.gob.es/opencms/es/politica-de-cookies/"> aquí </a>para ver la política de nuestras cookies</p>
-
+        <div>
+            <a href="{{url_for('set_cookies')}}"><button type="button">Aceptar</button></a>
+            <a href="{{ url_for('denegar_cookies') }}"><button type="button">Denegar</button></a>
+        </div>
+    </section>
 
 </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página principal</title>
+</head>
+<body>
+
+    <h1>Página principal</h1>
+
+    <p>Utilizamos cookies y de terceros para obtener datos estadísticosde de la navegación de nuestros usuarios y mejorar nuestros servicios.</p>
+
+    <a href="{{url_for('set_cookies')}}"><button type="button">Aceptar</button></a>
+    <a href="{{ url_for('denegar_cookies') }}"><button type="button">Denegar</button></a>
+
+    <p>Haz click<a href="https://www.interior.gob.es/opencms/es/politica-de-cookies/"> aquí </a>para ver la política de nuestras cookies</p>
+
+
+</body>
+</html>
